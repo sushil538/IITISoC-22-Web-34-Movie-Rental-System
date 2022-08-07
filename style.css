@@ -1,0 +1,195 @@
+body .navbar{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+ background-color: #212529; 
+ color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+ 
+  
+}
+
+.brands {
+  display: flex;
+ overflow-x: auto;
+  
+  color: white;
+  height:100px;
+
+}
+.sidebar {
+  width: 100%;
+
+}
+.brand {
+    padding: 0px 30px 0px 30px;
+}
+
+.brands img{
+  height: 90px;
+  
+  padding: 10px;
+
+  border-radius: 4px;
+  border-radius: 20%;
+}
+
+.des {
+  
+  margin-bottom: 0px;
+}
+.des p {
+  margin-bottom: 0px;
+}
+ .search {
+    width: 30%;
+ }
+
+ main{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+ .movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+   
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+.movie-info span.orange{
+    color:orange;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    color: #212529;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+/* .movie:hover .overview{
+    transform:translateY(0)
+}
+
+ */
+
+.des {
+  
+  margin-bottom: 0px;
+}
+.des p {
+  margin-bottom: 0px;
+}
+
+
+.descr {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+li {
+display: inline;
+}
+li div{
+  display: inline;
+  position: absolute;
+  margin-top: 0%;
+}
+img {
+  width: 30%;
+border-radius: 5%;
+}
+
+div h4{
+  color: #5a5d60;
+}
+.main {
+  margin: 5%;
+
+}
+.des {
+  margin: 10px;
+}
+.dis img {
+  width: 20%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.info {
+position: absolute;
+margin-left: 8%;
+max-width: 30%;
+}
+.info h4 {
+  display: inline;
+  max-width: 10%;
+}
+.info p {
+  display: inline-block;
+max-width: 50%;
+  
+}
+
+#noland {
+  display: none;
+}
+
+div button {
+ width: 20rem;
+
+  margin-bottom: 10px;
+
+}
