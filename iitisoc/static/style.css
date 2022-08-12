@@ -1,30 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Distressed&display=swap');
 
 
-@media(max-width: 720px){
-  .footSocial{
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-.navbar img{
-  height: 70px;
-  margin-left: 2%;
-  }
-.navbar{
-  grid-template-columns: auto auto auto auto auto;
-}
-.navElement a{
-  font-size: 15px;
-}
-.logo{
-  display: none;
-}
-.login{
-  font-size: 50%;
-  margin-top: 27px;
-}
-
-}
 body .navbar{
     color: white;
     text-decoration: none;
@@ -404,4 +380,40 @@ footer{
 
 form{
   margin: 0 auto;
+}
+.nav-item a{
+  color: white;
+  font-size: 25px;
+  margin-left: 40px;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.nav-item a:hover{
+  background-color: #212529;
+  color: gray;
+}
+@media(max-width: 720px){
+  .footSocial{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.navbar img{
+  height: 70px;
+  margin-left: 2%;
+  }
+
+.navbar{
+  grid-template-columns: auto auto auto auto auto;
+}
+.navElement a{
+  font-size: 15px;
+}
+.logo{
+  display: none;
+}
+.login{
+  font-size: 50%;
+  margin-top: 27px;
+}
+
 }

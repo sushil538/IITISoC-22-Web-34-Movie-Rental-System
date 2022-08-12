@@ -64,9 +64,9 @@ function myfunction(movie){
 <div class="main">
 <div class="pos">
   <img src="${IMG_URL+poster_path}" alt="">
-  <button>BOOKMARK</button>
-  <button class="buy">BUY NOW</button>
-  <button class="rent">RENT</button>
+  <a href="https://rzp.io/l/ZAD5TCZJC" target="_blank><button class="buy">BUY NOW${vote_average*20 + 9}</button></a>
+  <a href="https://rzp.io/l/ZAD5TCZJC" target="_blank><button class="rent">RENT ${vote_average*10 + 5}</button></a>
+  
 </div>
 <div class="discr">
   <h1>${title}</h1>
@@ -121,9 +121,10 @@ else{
 <div class="main">
 <div class="pos">
   <img src="${IMG_URL+poster_path}" alt="">
-  <button>BOOKMARK</button>
-  <button class="buy">BUY NOW</button>
-  <button class="rent">RENT</button>
+  
+  <a href="https://rzp.io/l/ZAD5TCZJC" target="_blank"><button class="buy">BUY NOW${vote_average*20 + 9}</button></a>
+  <a href="https://rzp.io/l/ZAD5TCZJC" target="_blank"><button class="rent">RENT ${vote_average*10 + 5}</button></a>
+  
 </div>
 <div class="discr">
   <h1>${title}</h1>

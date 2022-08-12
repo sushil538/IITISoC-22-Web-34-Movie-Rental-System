@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Movie Bazaar</title>
     {% load static %}
+  
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css'  %}">
@@ -13,32 +14,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
   <body>
-    <div>
-    <nav class="navbar navbar-expand-lg  " >
-        <div class="container-fluid">
-          <span><img src="{% static 'logo1.png'  %}"></span>
+    <div style="position: relative;">
+    <nav class="navbar navbar-expand-lg" style="position: sticky; top: 0;" >
+        <div class="container-fluid" style="background-color: rgba(48,58,61,1); border-radius: 20px;">
+          <span><img src="{% static 'logo1.png'  %}" style="margin-bottom: 5px;"></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="navbar" aria-current="page" href="#">Home</a>
+                <a class="navbar" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="navbar" href="#">About</a>
+                <a class="navbar" href="about">About</a>
               </li>
              
               <li class="nav-item">
-                <a class="navbar" href="contactus">Contact us</a>
+                <a class="navbar"  href="contactus">Contact us</a>
             </li>
-            <li>
+            <li class="nav-item">
               {% if user.is_authenticated %}
               <a class="navbar" href="logout">logout</a>
               {% else %}
-             <a class="navbar"  href="login">login or signup</a>
-             {% endif %}
+              <a class="navbar"  href="login">login or signup</a>
+              {% endif %}
             </li>
             </ul>
             
@@ -47,24 +50,25 @@
       </nav>
     
       <div class="des" >
-        {% if user.is_authenticated %}
-        <h2>hii {{user.username}} welcome to Movie Rental Website</h2>
+     
+           {% if user.is_authenticated %}
+           <h2 style="font-size: 45px; margin-top: 20px; ">Hii {{user.username}} Welcome to <span style="font-size: 55px; font-family: 'Rubik Distressed', cursive; color: lightskyblue;">Movie Bazaar</span> </h2>
            {% else %}
-           <h2>welcome to Movie Rental Website</h2>
+           <h2 style="font-size: 45px; margin-top: 20px; ">Welcome to <span style="font-size: 55px; font-family: 'Rubik Distressed', cursive; color: lightskyblue;">Movie Bazaar</span> </h2>
            {% endif %}
-        <p>Choose your favorite streaming providers and never miss when new movies or episodes of your favorite tv series are added. Always stay up to date with the JustWatch Timeline.
+        <p style="font-family: 'Fjalla One', sans-serif; font-size: 25px;">Choose your favorite streaming providers and never miss when new movies or episodes of your favorite tv series are added. Always stay up to date with the JustWatch Timeline.
           Use a filter for your favorite streaming provider, genre or release year. Our Watchbar will remember your settings.</p>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active crsl">
-              <img src="  {% static 'slider posters/featured KGF2.jpg'  %}  " class="d-block w-100" alt="...">
+              <img src="{% static 'slider posters/featured KGF2.jpg'  %}  " class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item crsl">
-              <img src="  {% static 'slider posters/featured dr strange.jpg'  %}   " class="d-block w-100" alt="...">
+              <img src=" {% static 'slider posters/featured dr strange.jpg'  %}  " class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item crsl">
-              <img src="  {% static 'slider posters/featured thor ragnarok.jpg'  %}   " class="d-block w-100" alt="...">
+              <img src=" {% static 'slider posters/featured thor ragnarok.jpg'  %}" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -170,6 +174,6 @@
       </div>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src=" {% static 'script.js'  %}"></script>
+    <script src="{% static 'script.js'  %}"></script>
   </body>
 </html>

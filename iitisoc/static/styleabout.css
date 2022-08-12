@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Distressed&display=swap');
+
+
+body{
+    background-color: #212529;
+    box-sizing: border-box;
+    padding: 10px;
+}
+body .navbar{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+li {
+    display: inline;
+    }
+    li div{
+      display: inline;
+      position: absolute;
+      margin-top: 0%;
+    }
+    div button {
+        width: 20rem;
+       
+         margin-bottom: 10px;
+       
+       }
+.heading{
+    margin-top: 20px;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+}
+.aboutContent{
+    font-size: 30px;
+    color: white;
+}
+.devHead{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: rgb(78,127,160);
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 2cm;
+    border-color: aliceblue;
+    position: relative;
+    
+}
+.child{
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.child img{
+
+    width: 100;
+    border-radius: 40%;
+    height: 9cm;
+    border: black 5px solid;
+    box-shadow: 8px 8px 15px black;
+    
+    
+    
+}
+.child div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(251, 250, 249);
+    color: black;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    
+    height: 5cm;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px;
+    
+    left: 0cm;
+    
+    
+
+   
+   }
+   .child:hover{
+    cursor: pointer;
+   }
+   
+   .child:hover div{
+    border-radius: 10%;
+    width: 270px;
+    height: 400px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+   }
+   .child .fa-facebook {
+    background: blue;
+    color: white;
+    width: 20%;
+    
+  }
+  
+  
+  .child .fa-github {
+    background: black;
+    color: white;
+    width: 20%;
+    
+  }
+  .child .fa-linkedin {
+    background: #1d2c4d;
+    color: white;
+    width: 20%;
+    
+  }
+  
+  
+  
+  .child .fa-instagram {
+    background: red;
+    
+    color: white;
+    width: 20%;
+    
+  }
+
+
+/* footer */
+#grid2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    box-sizing: border-box;
+    grid-row-gap: 30px;
+    grid-column-gap: 3%;
+}
+.footHead{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 50px;
+    font-family: 'Rubik Distressed', cursive;
+}
+.eleHead{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.detail{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.detail2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footSocial{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+footer .fa {
+    padding-right: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: cornflowerblue;
+    }
+footer{
+    /* border-radius: 20px; */
+    box-sizing: border-box;
+    padding: 2% 2%;
+    margin-top: 15px;
+    color: white;
+    }
+    .nav-item a{
+        color: white;
+        font-size: 25px;
+        margin-left: 40px;
+        border-radius: 8px;
+        transition: all 0.5s;
+      }
+      .nav-item a:hover{
+        background-color: #212529;
+        color: gray;
+      }
+
+
+    .conclusion{
+        text-align: center;
+    }
+    .navbar img{
+        height: 80px;
+        margin-left: 20px;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    @media(max-width: 450px){
+        .detail2{
+            display: none;
+        }
+    }
+    @media(max-width: 720px){
+        .footSocial{
+          grid-column-start: 4;
+          grid-column-end: 5;
+      }
+      .navbar img{
+        height: 70px;
+        margin-left: 2%;
+        }
+      
+      .navbar{
+        grid-template-columns: auto auto auto auto auto;
+      }
+      .navElement a{
+        font-size: 15px;
+      }
+      .logo{
+        display: none;
+      }
+      .login{
+        font-size: 50%;
+        margin-top: 27px;
+      }
+      
+      }
+
+      

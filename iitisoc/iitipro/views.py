@@ -9,7 +9,8 @@ def index(request):
 def contactus(request):
     return render(request,'contactus.html')
 
-
+def about(request):
+    return render(request,'about.html')
 
 
 def logout(request):
