@@ -1,1 +1,1 @@
-web: gunicorn iitipro.wsgi --log-file -
+web: gunicorn iitisoc.wsgi --log-file -
