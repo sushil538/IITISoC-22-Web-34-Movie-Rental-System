@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Distressed&display=swap');
+
+
+@media(max-width: 720px){
+  .footSocial{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.navbar img{
+  height: 70px;
+  margin-left: 2%;
+  }
+.navbar{
+  grid-template-columns: auto auto auto auto auto;
+}
+.navElement a{
+  font-size: 15px;
+}
+.logo{
+  display: none;
+}
+.login{
+  font-size: 50%;
+  margin-top: 27px;
+}
+
+}
+body .navbar{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+ background-color: #212529; 
+ color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+ 
+  
+}
+
+.brands {
+  display: flex;
+ overflow-x: auto;
+  
+  color: white;
+  height:100px;
+
+}
+.sidebar {
+  width: 100%;
+
+}
+.brand {
+    padding: 0px 30px 0px 30px;
+}
+
+.brands img{
+  height: 90px;
+  
+  padding: 10px;
+
+  border-radius: 4px;
+  border-radius: 20%;
+  width: 30%;
+
+}
+
+.des {
+  
+  margin-bottom: 0px;
+}
+.des p {
+  margin-bottom: 0px;
+}
+ .search {
+    width: 75%;
+    
+ }
+
+ main{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+ .movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+   
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+
+.des {
+  
+  margin-bottom: 0px;
+}
+.des p {
+  margin-bottom: 0px;
+}
+
+
+.descr {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+li {
+display: inline;
+}
+li div{
+  display: inline;
+  position: absolute;
+  margin-top: 0%;
+}
+
+
+div h4{
+  color: #5a5d60;
+}
+.main {
+  margin: 5%;
+
+}
+.des {
+  margin: 10px;
+}
+.dis img {
+  width: 20%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.info {
+position: absolute;
+margin-left: 8%;
+max-width: 30%;
+}
+.info h4 {
+  display: inline;
+  max-width: 10%;
+}
+.info p {
+  display: inline-block;
+max-width: 50%;
+  
+}
+
+#noland {
+  display: none;
+  
+}
+
+div button {
+ width: 20rem;
+
+  margin-bottom: 10px;
+
+}
+body {
+    
+  margin: 0%;
+  padding: 0%;
+  background-image: linear-gradient(#212529, rgb(37, 36, 36));
+  
+}
+
+.main{
+padding: 30px;
+margin: 0%;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 150px 150px 150;
+color: white;
+
+}
+.main img{
+width: 85%;
+}
+.discr{
+display: block;
+padding-left: 30px;
+grid-column-start: 2;
+grid-column-end: 4;
+width: 100%;
+padding: 30px;
+}
+.other-info{
+display: grid;
+padding-top: 20px;
+grid-template-columns: 1fr 1fr;
+}
+.other-info h3{
+display: block;
+margin: 3px;
+}
+.pos button{
+border-radius: 25px;
+height: 35px;
+width: 100%;
+position: relative;
+top: 20px;
+width: 85%;
+
+}
+.pos button:active{
+background-color: aliceblue;
+}
+.buy{
+background-color: blue;
+color: white;
+font-weight: 700;
+}
+.rent{
+background-color: red;
+color: white;
+font-weight: 700;
+}
+@media screen and (max-width: 480px){
+.main{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.main img{
+  width: 100%;
+}
+.other-info{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#trailer{
+  height:315px;
+}
+}
+.movie-name{
+text-align: center;
+}
+.trailer3{
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+}
+.trailer2{
+min-width: 400px;
+
+
+}
+/* this is for footer */
+
+#grid2{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  box-sizing: border-box;
+  grid-row-gap: 30px;
+}
+.footHead{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 50px;
+  font-family: 'Rubik Distressed', cursive;
+}
+.eleHead{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.detail{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.detail2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footSocial{
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+  }
+.fa {
+padding-right: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+color: cornflowerblue;
+}
+
+footer{
+  /* border-radius: 20px; */
+  box-sizing: border-box;
+  padding: 2% 2%;
+  margin-top: 15px;
+  }
+
+
+
+  /* this is for header */
+
+  .sticker{
+    position: relative;
+}
+
+
+.logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 23px;
+    font-size: 30px;
+}
+.navbar img{
+    height: 80px;
+    margin-left: 20px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.navElement{
+    margin-top: 23px;
+}
+.active a{
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 29px;
+    font-size: 25px;
+    background-color: #212529;
+    color: darkgrey;
+}
+.navElement a{
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 29px;
+    font-size: 25px;
+    color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transition: all 0.5s;
+}
+.navElement a:hover{
+    background-color: #212529;
+    color: darkgrey;
+}
+.login{
+    margin-top: 23px;
+    font-size: 20px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+form{
+  margin: 0 auto;
+}
